@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class bmiController {
     @GetMapping("/")
     public  String bmi() {
-        return "bmi" ;
+        return "index" ;
     }
 
     @GetMapping("/bmi_calc")
@@ -35,7 +35,7 @@ public class bmiController {
         model.addAttribute("height" ,height);
         model.addAttribute("weight" ,weight);
         model.addAttribute("bmiR" ,bmiR);
-        return "bmi";
+        return "index";
     }
 
 
